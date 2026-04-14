@@ -1,3 +1,5 @@
+[![Rust](https://img.shields.io/badge/rust-1.75+-orange.svg)](https://www.rust-lang.org) [![License](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg)](LICENSE) [![GitHub stars](https://img.shields.io/github/stars/peaceara777-star/rust-wifi?style=social)](https://github.com/peaceara777-star/rust-wifi)
+
 [![Rust](https://img.shields.io/badge/rust-1.75+-orange.svg)](https://www.rust-lang.org)
 [![License](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/peaceara777-star/rust-wifi?style=social)](https://github.com/peaceara777-star/rust-wifi)
