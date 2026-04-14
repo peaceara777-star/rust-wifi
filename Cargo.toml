@@ -1,0 +1,37 @@
+[package]
+name = "rust-wifi"
+version = "0.1.0"
+edition = "2021"
+authors = ["peaceara777-star"]
+description = "🛜 Professional WiFi Diagnostics and Repair Toolkit written in Rust"
+repository = "https://github.com/peaceara777-star/rust-wifi"
+homepage = "https://github.com/peaceara777-star/rust-wifi"
+documentation = "https://github.com/peaceara777-star/rust-wifi"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["wifi", "networking", "diagnostics", "toolkit", "rust"]
+categories = ["command-line-utilities", "network-programming", "gui"]
+
+[dependencies]
+eframe = "0.27"
+egui = { version = "0.27", features = ["default_fonts"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sysinfo = "0.30"
+chrono = "0.4"
+which = "6.0"
+log = "0.4"
+env_logger = "0.10"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["wlanapi", "winuser", "iphlpapi", "winerror", "winreg"] }
+
+[target.'cfg(target_os = "linux")'.dependencies]
+libc = "0.2"
+
+[profile.release]
+opt-level = 2
+lto = true
+codegen-units = 1
+strip = true
+
